@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/headerLinearlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/dateHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:textSize="12sp"/>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Confirmed"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    android:textColor="@color/black"
+    android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/dailyConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#00008B"
+        android:textSize="12sp"/>
+
+
+    <TextView
+        android:id="@+id/totalConfirmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="	#FF0000"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Recovered"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/dailyRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#00008B"/>
+
+        <TextView
+            android:id="@+id/totalRecovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="	#FF0000"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:gravity="center"
+    android:layout_marginLeft="55dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Death"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/dailyDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#00008B"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/totalDeaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="	#FF0000"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+
+    </LinearLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/myRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/headerLinearlay"
+    android:background="@color/cardview_dark_background"/>
+
+
+
+</RelativeLayout>

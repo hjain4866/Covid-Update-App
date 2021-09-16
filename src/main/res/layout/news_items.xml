@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="2dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    tools:ignore="ExtraText"
+    android:background="#0A1B7C"
+    app:cardBackgroundColor="#062E2A">
+
+
+    <!-- Linear layout for last updated time -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/lastUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginStart="20dp"
+            android:textSize="14sp"
+
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+
+    <!-- Linear layout for showing details of individual states -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/stateName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Death"/>
+
+            <TextView
+                android:id="@+id/death"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="	#FF0000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/todayDeath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+<!-- linear layout for active cases -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Active Cases"/>
+
+            <TextView
+                android:id="@+id/activeCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="	#FF0000"
+                android:textSize="18sp"/>
+
+
+
+        </LinearLayout>
+
+        <!-- linear layout for Recoverd cases-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Recoverd Cases"/>
+
+            <TextView
+                android:id="@+id/recoveredCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="	#FF0000"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/todayRecoverdCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+        </LinearLayout>
+<!-- linear layout for confirmed cases -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Confirmed Cases"/>
+
+            <TextView
+                android:id="@+id/confirmedCases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="	#FF0000"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/todayConfirmedcases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
